@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: max-content;
+  }
+
+.heading{
+  margin-top: 150px ;
+  margin-left: 77px;
+  width: 50%;
+}
+
+.container{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 1080px;
+  background-color: #d0c7ec;
+
+}
+h1{
+  font-family:'Open Sans';
+  font-size: 38px;
+  color: #0E345A;
+  letter-spacing: 0.64px;
+  line-height: 62px;
+  font-weight: 700;
+  margin-top: -100px;
+
+}
+.heads{
+  height: 125px;
+  width: 1000px;
+  margin: 72px 400px 718px 77px;
+}
+img{
+  height: 633px;
+  width:705px;
+  float: right;
+
+}
+h2{
+  font-family: 'Open Sans';
+  font-size: 24px;
+  color: #34495E;
+  letter-spacing: 0;
+  font-weight: 600;
+  height: 33px;
+  width: 283px;
+}
+li{
+  font-family:'Open Sans';
+  font-size: 24px;
+  color: #10365C;
+  letter-spacing: 0.32px;
+  font-weight: 400;
+  height: 33px;
+  width: 265px;
+  margin-top: 34px;
+  margin-bottom: 118px;
+  list-style: none;
+}
+span{
+  font-family: 'PT Sans';
+  font-size: 51px;
+  color: #BEACF6;
+  letter-spacing: 0.68px;
+  font-weight: 700;
+
+  margin-right: 9px;
+  margin-left: -40px;
+  height: 60px;
+  width: 30px;
+  float: left;
+  margin-bottom: 30px;
+  margin-top: -8px;
+
+}
+li p{
+  font-family: Open Sans;
+  font-size: 18px;
+  color: #10365C;
+  letter-spacing: 0.24px;
+  font-weight: 400;
+  height: 72px;
+  width: 460px;
+  margin-top: 8px;
+}
+.container-2{
+  float: right;
+  /* transform: translate(-50%); */
+  width:481px;
+  height: 565px;
+  background: white;
+  border-radius: 10px;
+  margin-right: -260px;
+  margin-top: -540px;
+}
+.container-2 h1{
+  text-align: left;
+  font-family: OpenSans-SemiBold;
+  font-size: 24px;
+  color: #34495E;
+  letter-spacing: 0;
+  font-weight: 600;
+  height:99px ;
+  width: 405px;
+  margin: auto;
+}
+.container-2 p{
+  font-family: OpenSans-Regular;
+  font-size: 18px;
+  color: #10365C;
+  letter-spacing: 0.24px;
+  font-weight: 400;
+  margin-left: 8%;
+  margin-top: -7%;
+  margin-bottom: 5%;
+
+}
+.container-2 form{
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+form input{
+  background: #FFFFFF;
+  border: 1px solid #C8C8C8;
+  border-radius: 6px;
+  width: 398px;
+  height: 50px;
+  margin-top: 10%;
+  font-size: 16px;
+  color: #10365C;
+  letter-spacing: 0.21px;
+  font-weight: 400;
+  font-family: 'Open Sans';
+  padding-left: 20px;
+}
+input.ng-invalid.ng-touched{
+  border-color: red;
+}
+.text-danger{
+  color: red;
+}
+.is-invalid{
+  border: 2px solid red;
+}
+.submit{
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  background: #48C15D;
+  border-radius: 20px;
+  font-size: 18px;
+  color: #e9f4fb;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  margin-top: 10% ;
+}
+.signup_link{
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #666666;
+}
+.signup_link a{
+  color: #2691d9;
+  text-decoration: none;
+}
+.signup_link a:hover{
+  text-decoration: underline;
+}
+
+@media(max-width:1080px){
+  body{
+    width:1084px
+  }
+
+}

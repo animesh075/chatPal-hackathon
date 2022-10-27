@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="10px" viewBox="0 0 18 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>dropdown</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Team-tag" transform="translate(-610.000000, -893.000000)" fill="#0E345A">
+            <path d="M626.485281,893 L611.514719,893 C610.962434,893 610.514719,893.447715 610.514719,894 C610.514719,894.265216 610.620075,894.51957 610.807612,894.707107 L618.292893,902.192388 C618.683418,902.582912 619.316582,902.582912 619.707107,902.192388 L627.192388,894.707107 C627.582912,894.316582 627.582912,893.683418 627.192388,893.292893 C627.004852,893.105357 626.750498,893 626.485281,893 Z" id="dropdown"></path>
+        </g>
+    </g>
+</svg>

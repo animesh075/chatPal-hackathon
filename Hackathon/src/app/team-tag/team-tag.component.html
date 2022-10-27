@@ -1,0 +1,134 @@
+<p>team-tag works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Tag</title>
+</head>
+<body>
+  <div class="circle">
+    <h4>Business Display Name</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing<br>
+       elit. Maecenas varius tortor nibh, sit amet tempor<br>
+        nibh finibus et. Aenean eu enim justo. Vestibulum<br>
+         aliquam hendrerit molestie. Mauris malesuada nisi sit <br>
+         amet augue accumsan tincidunt. Maecenas tincidunt,<br>
+          velit ac porttitor pulvinar</p>
+          <img src="../../assets/img/illustration@2x.png">
+  </div>
+  <div class="profile">
+    <img src="../../assets/img/profile-user.svg">
+    <h3>Welcome, Mathew, Company setup for team tags</h3>
+  </div>
+<section class="timeline-area">
+  <form  [formGroup]="reactiveForm" (ngSubmit)="addDetails()">
+  <div class="naviga">
+    <h2>Business Display Name</h2>
+    <input  type="text" placeholder="Enter Display Name" formControlName="bussinessName">
+  </div>
+  <div class="naviga">
+    <h2>TAG Location Address <p class="small-text">Click on location pin to pre-fill address</p></h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.2027987559222!2d78.35359631482689!3d17.450004988041066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90d6ab0138a5%3A0x483df85637a9b809!2sDivami%20Design%20Labs%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1626334169791!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <div class="address">
+      <label>Address</label>
+      <input type="text" placeholder="Enter your address" formControlName="address">
+    </div>
+    <div class="address">
+      <label>Country</label>
+      <select class="custom-select" [(ngModel)]="selectedCountry.id" formControlName="country" style="-webkit-appearance: none; ">
+        <option value="0" selected [ngValue]="null">Choose Your country</option>
+        <option *ngFor="let country of countryList" [value]="country.name" >{{ country.name }}</option>
+      </select>
+    </div>
+    <div class="address">
+      <label>State</label>
+      <select class="custom-select" formControlName="state" style="-webkit-appearance: none;">
+        <option value="0" selected [ngValue]="null">Choose Your state</option>
+        <option *ngFor="let state of states" [value]="state.name" >{{ state.name }}</option>
+      </select>
+    </div>
+    <div class="address">
+      <label>City</label>
+      <select class="custom-select"  formControlName="city" style="-webkit-appearance: none;">
+        <option value="0" selected [ngValue]="null">Choose Your City</option>
+        <option *ngFor="let city of cities" [value]="city.name">{{ city.name }}</option>
+      </select>
+    </div>
+    <div class="address">
+      <label>Zipcode</label>
+      <input type="text" placeholder="Enter your address" formControlName="zipcode">
+    </div>
+  </div>
+  <div class="naviga">
+    <h2>Upload Tag image</h2>
+    <div class="container2">
+      <div class="avatar-upload">
+        <div class="avatar-edit">
+          <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" formControlName="image" #fileInput (change)="uploadFile($event)" />
+        </div>
+        <div class="avatar-preview">
+          <div id="imagePreview" [style.backgroundImage]="'url('+ imageUrl +')'">
+          </div>
+        </div>
+      </div>
+    <div class="slidecontainer">
+      <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+      <div class="contains">
+        <div class="smallCircle" id="myImg" (onClick)="rotateLeft()"><img src="../../assets/img/rotate-ccw.svg"></div>
+        <div class="smallCircle"><img src="../../assets/img/rotate-ccw copy.svg"></div>
+        <button type="submit" class="btn btn-danger btn-lg btn-block" (click)="fileInput.click()">Upload</button>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="naviga">
+    <h2>Tag your team member</h2>
+      <div class="search-box">
+        <select class="search-text" [(ngModel)]="selectedCountry.id" formControlName="choose"  style="-webkit-appearance: none;">
+          <option  selected >Choose Your country</option>
+          <option *ngFor="let country of countryList" [value]="country.name" >{{ country.name }}</option>
+        </select>
+      <a class="search-btn" href="#"></a>
+    </div>
+    <div class="address">
+      <label>Phone number</label>
+      <input type="tel" placeholder="Enter your phone number" [(ngModel)]="phoneSearch" formControlName="phone" (ngModelChange)="sendData($event)">
+    </div>
+    <button  >Submit</button>
+    </div> </form>
+    <div *ngIf="phoneSearch" class="content-temp">
+      <h3>Your Searches</h3>
+      <ul  *ngFor="let user of users | filter:phoneSearch">
+        <table>
+        <tr>
+        <td>
+        <li>{{user.name}}</li>
+        <li>{{user.phone}}</li>
+      </td>
+      <td><li ><img src="../../assets/img/close.svg" (click)="addTeam(user)"> </li></td>
+      </tr>
+    </table>
+      </ul>
+    </div>
+    <div class="teams">
+    <label>Your Team</label>
+    <div  class="content">
+      <ul  *ngFor="let user of selectedTeam">
+        <table style="margin: 10px;">
+        <tr>
+          <td  style="margin-right: 10px;"><img src="../../assets/img/pending.svg"></td>
+        <td>
+        <li>{{user.name}}</li>
+        <li>{{user.phone}}</li>
+      </td>
+      <td><img src="../../assets/img/trash-2.svg" (click)="delete(user)"></td>
+      </tr>
+    </table>
+      </ul>
+    </div>
+  </div>
+</section>
+</body>
+</html>

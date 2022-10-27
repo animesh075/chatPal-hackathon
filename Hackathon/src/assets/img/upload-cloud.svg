@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="29px" viewBox="0 0 35 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>upload-cloud</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Team-tag" transform="translate(-193.000000, -1420.000000)" stroke="#000000" stroke-width="2">
+            <g id="upload-cloud" transform="translate(194.000000, 1421.000000)">
+                <polyline id="Path" points="22 20 16 14 10 20"></polyline>
+                <line x1="16" y1="13" x2="16" y2="27" id="Path"></line>
+                <path d="M29.0897127,23 C32.0989369,21.3650672 33.612985,17.9049792 32.7675864,14.5948733 C31.9221877,11.2847673 28.9324995,8.96707853 25.5051388,8.96482342 L23.6153633,8.96482342 C22.3721328,4.17255761 18.2946426,0.639042677 13.3598874,0.077523846 C8.42513225,-0.483994985 3.65333439,2.04257193 1.35812773,6.43220397 C-0.937078932,10.821836 -0.281178285,16.1670109 3.00781244,19.8760896" id="Path"></path>
+                <polyline id="Path" points="22 20 16 14 10 20"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

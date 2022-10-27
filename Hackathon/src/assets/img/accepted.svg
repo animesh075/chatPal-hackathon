@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="33px" viewBox="0 0 29 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>accepted</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M11.4736736,22.8465102 C17.7675635,22.8465102 22.8697695,17.7667248 22.8697695,11.5004919 C22.8697695,5.23425897 17.7675635,0.154473537 11.4736736,0.154473537 C5.1797836,0.154473537 0.0775776663,5.23425897 0.0775776663,11.5004919 C0.0775776663,17.7667248 5.1797836,22.8465102 11.4736736,22.8465102 Z" id="path-1"></path>
+        <linearGradient x1="29.8321111%" y1="-9.27663866%" x2="65.9552576%" y2="83.3149881%" id="linearGradient-3">
+            <stop stop-color="#65D768" offset="0%"></stop>
+            <stop stop-color="#1BA14B" offset="100%"></stop>
+            <stop stop-color="#1BA14B" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="4.86752355%" y1="4.80354346%" x2="92.4032518%" y2="87.3698691%" id="linearGradient-4">
+            <stop stop-color="#1EA44D" offset="0%"></stop>
+            <stop stop-color="#31B153" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Team-tag" transform="translate(-119.000000, -2150.000000)">
+            <g id="accepted" transform="translate(113.000000, 2144.000000)">
+                <g id="Bitmap-Copy-13" transform="translate(21.500000, 23.500000) scale(1, -1) rotate(90.000000) translate(-21.500000, -23.500000) translate(10.000000, 12.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                </g>
+                <path d="M22.5,6.66666667 C31.2445085,6.66666667 38.3333333,13.7554915 38.3333333,22.5 C38.3333333,31.2445085 31.2445085,38.3333333 22.5,38.3333333 C21.2727006,38.3333333 20.2777778,37.3384106 20.2777778,36.1111111 C20.2777778,34.8838117 21.2727006,33.8888889 22.5,33.8888889 C28.7899097,33.8888889 33.8888889,28.7899097 33.8888889,22.5 C33.8888889,16.2100903 28.7899097,11.1111111 22.5,11.1111111 C16.2100903,11.1111111 11.1111111,16.2100903 11.1111111,22.5 C11.1111111,23.7272994 10.1161883,24.7222222 8.88888889,24.7222222 C7.66158944,24.7222222 6.66666667,23.7272994 6.66666667,22.5 C6.66666667,13.7554915 13.7554915,6.66666667 22.5,6.66666667 Z" id="Oval-Copy-38" fill="url(#linearGradient-3)" fill-rule="nonzero" transform="translate(22.500000, 22.500000) scale(1, -1) rotate(226.000000) translate(-22.500000, -22.500000) "></path>
+                <path d="M9,30 L14.7046296,30.2726381 L15,36 L10,36 C9.44771525,36 9,35.5522847 9,35 L9,30 L9,30 Z" id="Rectangle-Copy-45" fill="url(#linearGradient-4)" transform="translate(12.000000, 33.000000) scale(1, -1) rotate(90.000000) translate(-12.000000, -33.000000) "></path>
+                <polyline id="Path-9-Copy" stroke="#52C961" stroke-width="2" stroke-linecap="round" points="18 23.7275795 21.6806671 26 27 19"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

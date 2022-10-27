@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  z-index: 1;
+}
+
+li, a{
+display: inline-block;
+font-size: 20px;
+font-family: 'Open Sans';
+color: #10365C;
+letter-spacing: 0.27px;
+line-height: 68px;
+font-weight: 400;
+text-decoration: none;
+margin-right: 49px;
+}
+
+.logo{
+  cursor: pointer;
+  position: relative;
+  margin: 19px 0 19px 42px;
+  height: 42px;
+  width: 169px;
+}
+
+button{
+  padding: 9px 25px;
+  background: #48C15D;
+  border-radius: 20px;
+  border: none;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: 0.21px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin: 18px 29px auto;
+}
+@media(max-width:1080px){
+  .header{
+    font-size: 60%;
+  }
+  li a{
+    font-size: 60%;
+  }
+  button{
+    font-size: 60%;
+    margin-left: -100%;
+  }
+  .logo{
+    height: 42px;
+    width: 119px;
+  }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hackathon</title>
+</head>
+
+<body>
+<header class="head-container">
+  <img class="logo" src="../assets/img/logo@2x.png" alt="logo">
+    <ul class="nav_links">
+      <li id="link1"><a href="#">Features</a></li>
+      <li><a href="#">Use cases</a></li>
+    </ul>
+  <a *ngIf="!signedin()" [routerLink]="['/login']" routerLinkActive="router-link-active"  class="cta" href="#"><button>Team Tags &nbsp; Sign Up | Sign In &nbsp;<img src="../assets/img/button arrow.svg"></button></a>
+
+  <a *ngIf="signedin()" [routerLink]="['/login']" routerLinkActive="router-link-active"  (click)="onSignout()" class="cta" href="#"><button>SignOut &nbsp;<img src="../assets/img/button arrow.svg"></button></a>
+</header>
+<section class="banner"></section>
+<router-outlet></router-outlet>
+</body>
+
+</html>
+
+

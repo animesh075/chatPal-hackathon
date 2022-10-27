@@ -1,0 +1,111 @@
+{
+  "countries":[
+    {
+      "id":1,
+      "name":"Germany"
+    },
+    {
+      "id":2,
+      "name":"USA"
+    },
+    {
+      "id":3,
+      "name":"India"
+    }
+  ],
+  "states":[
+    {
+      "id":1,
+      "name":"Albama",
+      "country_id": 2
+    },
+    {
+      "id":2,
+      "name":"Arizona",
+      "country_id": 2
+    },
+    {
+      "id":3,
+      "name":"California",
+      "country_id": 2
+    },
+    {
+      "id":4,
+      "name":"Odisha",
+      "country_id": 3
+    },
+    {
+      "id":5,
+      "name":"Banglore",
+      "country_id": 3
+    },
+    {
+      "id":6,
+      "name":"Hyderabad",
+      "country_id": 3
+    },
+    {
+      "id":7,
+      "name":"Caligerman",
+      "country_id": 1
+    },
+    {
+      "id":8,
+      "name":"California-Grman",
+      "country_id": 1
+    },
+    {
+      "id":9,
+      "name":"California-German",
+      "country_id": 1
+    }
+  ],
+  "cities":[
+    {
+      "id":1,
+      "name":"A",
+      "state_id": 2
+
+    },
+    {
+      "id":2,
+      "name":"Ar",
+      "state_id": 2
+    },
+    {
+      "id":3,
+      "name":"Cli",
+      "state_id": 2
+    },
+    {
+      "id":4,
+      "name":"Oha",
+      "state_id": 3
+    },
+    {
+      "id":5,
+      "name":"Bnore",
+      "state_id": 3
+    },
+    {
+      "id":6,
+      "name":"Hyabad",
+      "state_id": 3
+    },
+    {
+      "id":7,
+      "name":"Calrman",
+      "state_id": 1
+    },
+    {
+      "id":8,
+      "name":"Calnia-Grman",
+      "state_id": 1
+    },
+    {
+      "id":9,
+      "name":"Caliman",
+      "state_id": 1
+    }
+  ]
+}

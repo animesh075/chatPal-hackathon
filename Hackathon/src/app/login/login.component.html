@@ -1,0 +1,55 @@
+
+<body>
+  <img src="../../assets/img/Background.png">
+<div class="container">
+  <br>
+  <br><br>
+    <div class="heading">
+  <h1>Chatpal can connect your team<br>
+    Be it your Business or acquaintances</h1>
+  </div>
+  <div class="heads">
+      <div  class="container-3">
+        <h2>Tag your team in 3 steps</h2>
+        <ol>
+          <span>1</span>
+          <li>Create an account<br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo.</p>
+          </li>
+          <span>2</span>
+          <li>Instruct your team<br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo.</p>
+          </li>
+          <span>3</span>
+          <li>Inform your customers<br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo.</p>
+          </li>
+        </ol>
+      </div>
+      <div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Success!!</strong> Your data addesd successfully.
+        <button (click)="closeAlert()"type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      <div class="container-2">
+        <h1 id="signin_up"> Sign in or Sign up</h1>
+        <p id="sign2">using your phone number to create tags<br>
+           for teams & businesses</p>
+
+           <form #userForm="ngForm">
+             <div class="txt_field">
+             <input type="text" class="form-control" #email="ngModel" [class.is-invalid]="email.touched" [(ngModel)]="userModel.email" placeholder="Enter your Email Id" name="email" required >
+             <div *ngIf="email.touched && email.invalid && email.errors">
+             <small class="text-danger">Email is Required</small>
+            </div>
+            </div>
+             <div class="txt_field">
+
+             <input type="password" #password="ngModel" class="form-control" [(ngModel)]="userModel.password" name="password" placeholder="Password" required>
+             <div *ngIf="password.touched && password.invalid ">
+             <small class="text-danger">Password is Required</small>
+            </div>
+            </div>
+             <button class="submit" [disabled]="!userForm.valid" type="submit" value="login" (click)="login()">Submit</button>
+             <div class="signup_link">Not a member?<a href="#">Signup</a></div>
+           </form>
+    </div>
+  </div>
+</div>
+</body>
